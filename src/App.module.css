@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.3em;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  background: radial-gradient(white, slategray);
+  height: 100vh;
+  width: 100vw;
+  color: rgb(239, 239, 239);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.calculator {
+  width: 80%;
+  height: 80%;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.171);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dark {
+  background: linear-gradient(90deg, rgb(20, 20, 20) 20%, rgb(40, 40, 40) 100%);
+  color: rgba(197, 195, 195, 0.705);
+}
+
+.light {
+  background-color: ghostwhite;
+  color: black;
+  font-weight: bold;
+}
+
+.gray {
+  background-color: slategray;
+  color: azure;
+}
+
+@media (min-width: 500px) {
+  .calculator {
+    font-size: 1.2em;
+    width: 65%;
+    height: 65%;
+  }
+}
+
+@media (min-width: 700px) and (min-height: 720px) {
+  .calculator {
+    font-size: 1em;
+    width: 65%;
+    height: 80%;
+  }
+}
+
+@media (min-width: 801px) {
+  .calculator {
+    font-size: 1.5em;
+    width: 65%;
+    height: 80%;
+  }
+}
+
+@media (min-width: 540px) and (min-height: 720px) {
+  .calculator {
+    width: 50%;
+    height: 80%;
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1281px) {
+  .calculator {
+    width: 20%;
+    height: 80%;
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .calculator {
+    width: 20%;
+    height: 80%;
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1023px) and (min-height: 1355px) {
+  .calculator {
+    width: 40%;
+    height: 70%;
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 1500px) {
+  .calculator {
+    width: 30%;
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 600px) and (min-height: 1024px) {
+  .calculator {
+    height: 60%;
+    font-size: 1.2em;
+  }
+}
+
+.calc {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 15px;
+}
+
+.calc button {
+  padding: 4% 0%;
+  font-size: 0.9em;
+  width: 25%;
+  margin: 3% 0%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.dark button {
+  color: rgba(197, 195, 195, 0.705);
+}
+
+.light button {
+  color: black;
+  font-weight: bold;
+}
+
+.gray button {
+  color: azure;
+}
+
+.calc button:active {
+  background-color: rgb(51, 51, 51);
+}
+
+.calc .operator {
+  padding: 4% 0%;
+  width: 25%;
+  margin: 3% 0%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: blue;
+  font-size: 1.2em;
+}
+
+.dark .calc .operator {
+  color: orangered;
+}
+
+.light .calc .operator {
+  color: orange;
+}
+
+.calc button:first-child {
+  color: rgb(165, 40, 40);
+  font-size: 1.2em;
+}
+
+.calc .operator:last-child {
+  background-color: blue;
+  width: 45%;
+  color: white;
+  border-bottom-right-radius: 8px;
+}
+
+.dark .calc .operator:last-child {
+  background-color: orangered;
+}
+
+.light .calc .operator:last-child {
+  background-color: orange;
+}
+
+.containerDisplay {
+  height: 100%;
+  padding: 0% 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+p {
+  font-weight: bold;
+  text-align: right;
+  margin-bottom: 3%;
+}
+
+.numbers {
+  font-size: 0.9em;
+}
+
+.result {
+  overflow: auto;
+  font-size: 1.5em;
+}
+
+.themes {
+  text-align: end;
+  margin-top: 20px;
+  border-style: ridge;
+  border-color: gray;
+}
+
+.themes label {
+  display: flex;
+  justify-content: end;
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+.dark .themes label {
+  color: darkmagenta;
+}
+
+.dark .themes button {
+  color: blueviolet;
+}
+
+.light .themes label,
+.light .themes button {
+  color: seagreen;
+}
+
+.themes button {
+  padding: 1% 0%;
+  font-size: 14px;
+  width: 25%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.themes button:active {
+  background-color: rgb(51, 51, 51);
+}
