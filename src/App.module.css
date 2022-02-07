@@ -224,7 +224,7 @@ p {
 
 .themes label {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   margin-right: 5px;
   font-size: 12px;
 }
