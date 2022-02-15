@@ -8,9 +8,7 @@ Implemented theme change and keyboard input.
 
 Stack React(useState, useEffect, useContext), classNames.
 
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
